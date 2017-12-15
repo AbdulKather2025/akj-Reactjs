@@ -1,16 +1,12 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-
  
-//Object Demo
-let obj ={
-    fName : 'Abdul',
-    lName : 'Kather'
+//Function Demo
+function cube(a) {
+    return <h1>Cubic Value is {a*a*a} </h1>
 }
-const element = <h1> Welcome {obj.fName} {obj.lName}</h1>
- 
-ReactDom.render(  
-  element,     
+
+ReactDom.render(
+  cube(11),
   document.getElementById('root')
 );
- 
