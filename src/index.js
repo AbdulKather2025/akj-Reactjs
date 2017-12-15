@@ -1,15 +1,10 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-//Basic Data Types Demo
-let fname = 'Abdul';
-let lname = 'Kather';
-const msg = <h1> This is {fname} {lname}</h1>
-
- 
+//Arrow Function Demo
+let fun = (a,b) =>  <h1>Addition of two Numbers {a+b} </h1>;
 
 ReactDom.render(
-  msg,
+  fun(10,20) ,
   document.getElementById('root')
 );
- 
